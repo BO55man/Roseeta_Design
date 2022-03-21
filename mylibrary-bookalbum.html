@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Library-bookalbum / Kogitobooks</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="site-info">
+          <div class="site-title">
+            <a href="index.html">Kogito Books</a>
+          </div>  
+        </h1>
+        <div class="page-info">
+            <div class="mylibrary__header">
+                <a href="mylibrary-bookalbum.html" class="mylibrary__header--click">북앨범</a>
+                <a href="mylibrary-people.html" class="mylibrary__header--noclick">사람 / 작가</a>
+                <a href="mylibrary-book.html" class="mylibrary__header--noclick">책 / 챕터</a>
+            </div>
+        </div>
+        <div class="user-info">
+          <div>
+            <a href="#" class="user-profile">
+              <img class="user-profile__image" src="img/elon_musk.jpeg" />
+              <span class="user-profile__name">Elon Musk</span>
+              <span class="user-profile__btn">
+                <i class="fas fa-caret-down"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <container class="container">
+        <nav>
+          <ul class="nav">
+            <li class="nav__row">
+              <a href="index.html">
+                <i class="fas fa-home"></i>
+                <span class="nav__row-text">홈</span>
+              </a>
+            </li>
+            <li class="nav__row">
+              <a href="search.html">
+                <i class="fas fa-search"></i>
+                <span class="nav__row-text">검색</span>
+              </a>
+            </li>
+            <li class="nav__row">
+              <a href="mylibrary-bookalbum.html">
+                <i class="fas fa-book"></i>
+                <span class="nav__row-text">내 라이브러리</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="mylibrary">
+            <div class="section">
+                <div class="section__header">
+                  <div class="section__title">내가 생성한 북앨범</div>
+                </div>
+                <div class="section__content">
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                        <img class="bookalbum__cover--img" src="img/architecture.jpeg"/>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">My Favorite Quotes</li>
+                      <li class="bookalbum__author">
+                        만든 사람:<div> Elon Musk</div>
+                      </li>
+                    </ul>
+                  </a>
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                        <img class="bookalbum__cover--img" src="img/design.jpeg"/>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">How to design E-car</li>
+                      <li class="bookalbum__author">
+                        만든 사람:<div> Elon Musk</div>
+                      </li>
+                    </ul>
+                  </a>
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                        <img class="bookalbum__cover--img" src="img/essay.jpeg"/>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">Good Essays</li>
+                      <li class="bookalbum__author">
+                        만든 사람:<div> Elon Musk</div>
+                      </li>
+                    </ul>
+                  </a>
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                        <img class="bookalbum__cover--img" src="img/politics.jpeg"/>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">Beating Short seller</li>
+                      <li class="bookalbum__author">
+                        만든 사람:<div> Elon Musk</div>
+                      </li>
+                    </ul>
+                  </a>
+                </div>        
+            </div>
+            <div class="section">
+                <div class="section__header">
+                  <div class="section__title">내가 좋아요 표시한 북앨범</div>
+                </div>
+                <div class="section__content">
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                      <img class="bookalbum__cover--img" src="img/mars.jpeg"/>
+                      <div class="bookalbum__cover--design">화성 에세이</div>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">화성 에세이</li>
+                      <li class="bookalbum__contain">
+                        <div>화성, 또 하나의 생명</div>,
+                        <div>2030 화성 오디세이</div>등
+                      </li>
+                    </ul>
+                  </a>
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                      <img class="bookalbum__cover--img" src="img/tesla.jpeg"/>
+                      <div class="bookalbum__cover--design">테슬라 성공스토리</div>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">테슬라 성공스토리</li>
+                      <li class="bookalbum__contain">
+                        <div>자동차, 전기에너지, 그리고 그 밖의 것들</div>,
+                        <div>친환경 에너지 속으로</div>등
+                      </li>
+                    </ul>
+                  </a>
+                  <a href="#" class="bookalbum">
+                    <div class="bookalbum__cover">
+                      <img class="bookalbum__cover--img" src="img/inner_peace.jpeg"/>
+                      <div class="bookalbum__cover--design">내면의 평화를 찾아서</div>
+                    </div>
+                    <ul>
+                      <li class="bookalbum__title">내면의 평화를 찾아서</li>
+                      <li class="bookalbum__contain">
+                        <div>명상에 대한 거의 모든 것</div>,
+                        <div>소마지성을 깨워라</div>등
+                      </li>
+                    </ul>
+                  </a>
+                </div>
+            </div>
+        </main>
+
+
+        <article class="article">
+            <div class="article__people">
+              <div class="article__people-title">Who to follow</div>
+              <div class="article__people-content">
+                <a href="#" class="article__people-follow">
+                  <img class="people-follow__photo" src="img/steve_jobs.jpeg"/>
+                  <span class="people-follow__name">Steve Jobs</span>
+                  <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
+                </a>
+                <a href="#" class="article__people-follow">
+                  <img class="people-follow__photo" src="img/tim_cook.jpeg"/>
+                  <span class="people-follow__name">Tim Cook</span>
+                  <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
+                </a>
+                <a href="#" class="article__people-follow">
+                  <img class="people-follow__photo" src="img/jeff_bezos.jpeg"/>
+                  <span class="people-follow__name">Jeff Bezos</span>
+                  <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
+                </a>
+              </div>
+              <div class="article__show-all"><a href="#">더 보기</a></div>
+            </div>
+    
+            <div class="article__topic">
+              <div class="article__topic-title">Topic you might like</div>
+              <div class="article__topic-content">
+                <a href="#" class="topic__element">value investing 
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">economy
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">stocks
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">deep learning
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">finance
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+              </div>
+              <div class="article__show-all"><a href="#">더 보기</a></div>
+            </div>
+    
+            <div class="footer">
+              <div class="footer__content"><a href="#" >Terms of Service</a></div>
+              <div class="footer__content"><a href="#" >Privacy Policy</a></div>
+              <div class="footer__content"><a href="#" >Cookie Policy</a></div>
+              <div class="footer__content"><a href="#" >Learn More About Us</a></div>
+              <div class="footer__content"><a href="#" >© Kogitobooks.com</a></div>
+            </div>
+          </article>
+    </container>
+    
+    <script 
+        src="https://kit.fontawesome.com/0a0dddc92c.js" 
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

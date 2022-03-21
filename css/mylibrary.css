@@ -1,0 +1,45 @@
+.mylibrary {
+    display: flex;
+    flex-direction: column;
+    height: auto;   
+    width: 780px;
+    background-color: #101010;
+}
+.mylibrary__header {
+    display: flex;
+    width: 780px;
+    height: 60px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mylibrary__header--click {
+    padding:  7px 12px 7px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #303030;
+    color: #ffffff;
+}
+.mylibrary__header--noclick {
+    padding: 7px 12px 7px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 12px;
+    background-color: #151515;
+    color:#ffffff;
+}
+
+.mylibrary__header a:hover {
+    background-color: #303030;
+    font-weight: 600;
+}
+.mylibrary a:hover {
+    background-color: #303030;
+}
+
+
+
+

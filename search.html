@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search / Kogitobooks</title>
+</head>
+
+<body>
+    <header class="header">
+      <h1 class="site-info">
+        <div class="site-title">
+          <a href="index.html">Kogito Books</a>
+        </div>  
+      </h1>
+      <div class="page-info">
+        <form class="search__form">
+            <i class="fas fa-search"></i>
+            <input type="search" class="search__form--input" placeholder="책, 작가, 플레이리스트"/>
+        </form>
+      </div>
+      <div class="user-info">
+        <div>
+          <a href="#" class="user-profile">
+            <img class="user-profile__image" src="img/elon_musk.jpeg" />
+            <span class="user-profile__name">Elon Musk</span>
+            <span class="user-profile__btn">
+              <i class="fas fa-caret-down"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <container class="container">
+      <nav>
+        <ul class="nav">
+          <li class="nav__row">
+            <a href="index.html">
+              <i class="fas fa-home"></i>
+              <span class="nav__row-text">홈</span>
+            </a>
+          </li>
+          <li class="nav__row">
+            <a href="search.html">
+              <i class="fas fa-search"></i>
+              <span class="nav__row-text">검색</span>
+            </a>
+          </li>
+          <li class="nav__row">
+            <a href="mylibrary-bookalbum.html">
+              <i class="fas fa-book"></i>
+              <span class="nav__row-text">내 라이브러리</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+        <main class="search">
+          <div class="section">
+              <div class="section__header">
+                <div class="section__title"> 최근 검색 기록 </div>
+              </div>
+              <div class="section__content">
+                <a href="#" class="bookalbum">
+                    <form action='#'><input class="bookalbum__record-delete" type="submit" value="X"></form> <!--action에 php주소 입력-->
+                    <div class="bookalbum__cover">
+                        <img class="bookalbum__cover--img" src="img/spacex.jpeg">
+                        <div class="bookalbum__cover--design">스페이스 X 믹스</div>
+                    </div>
+                    <ul>
+                        <li class="bookalbum__title">스페이스 X 믹스</li>
+                        <li class="bookalbum__contain">
+                          <div>일론 머스크 생애</div>,
+                          <div>가자 화성으로</div>등
+                        </li>                        
+                    </ul>
+                </a>
+                <a href="#" class="bookalbum">
+                    <form action='#'><input class="bookalbum__record-delete" type="submit" value="X"></form> <!--action에 php주소 입력-->
+                    <div class="bookalbum__cover">
+                        <img class="bookalbum__cover--img" src="img/tax_discount.jpeg">
+                        <div class="bookalbum__cover--design">Discounting Tax</div>
+                    </div>
+                    <ul>
+                        <li class="bookalbum__title">Discounting Tax</li>
+                        <li class="bookalbum__contain">
+                          <div>부자들만 아는 그들만의 탈세법</div>,
+                          <div>Tax System of U.S</div>등
+                        </li>                        
+                    </ul>
+                </a>
+                <a href="#" class="book">
+                    <form action='#'><input class="book__record-delete" type="submit" value="X"></form> <!--action에 php주소 입력-->
+                    <img class="book__cover" src="img/importance_of_making.jpeg"/>
+                    <ul>
+                      <li class="book__title">The Importance of ...</li>
+                      <li class="book__author">Henry Wharton Shoemaker</li>
+                    </ul>  
+                </a>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="section__header">
+                <div class="section__title">모두 찾아보기</div>
+              </div>
+              <div class="section__content">
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/discover.jpg"/> 
+                    <div class="search__all-topic">Trending</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/chart.jpeg"/> 
+                    <div class="search__all-topic">Chart</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/new_release.jpeg"/> 
+                    <div class="search__all-topic">New</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/philosophy.jpeg"/> 
+                    <div class="search__all-topic">철학</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/religion.jpeg"/> 
+                    <div class="search__all-topic">종교</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/economy.jpeg"/> 
+                    <div class="search__all-topic">경제</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/politics.jpeg"/> 
+                    <div class="search__all-topic">정치/사회</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/science.jpeg"/> 
+                    <div class="search__all-topic">과학</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/architecture.jpeg"/> 
+                    <div class="search__all-topic">건축</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/computer.jpeg"/> 
+                    <div class="search__all-topic">컴퓨터</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/music.jpeg"/> 
+                    <div class="search__all-topic">음악</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/sports.jpeg"/> 
+                    <div class="search__all-topic">스포츠</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/design.jpeg"/> 
+                    <div class="search__all-topic">디자인</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/photography.jpeg"/> 
+                    <div class="search__all-topic">사진</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/language.jpeg"/> 
+                    <div class="search__all-topic">언어</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/novel.jpeg"/> 
+                    <div class="search__all-topic">소설</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/essay.jpeg"/> 
+                    <div class="search__all-topic">에세이</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/poetry.jpeg"/> 
+                    <div class="search__all-topic">시</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/history.jpeg"/> 
+                    <div class="search__all-topic">역사</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/magazine.jpeg"/> 
+                    <div class="search__all-topic">매거진</div>
+                </a>
+                <a href="#" class="search__all-element">
+                    <img class="search__all-photo" src="img/etc.jpeg"/> 
+                    <div class="search__all-topic">기타</div>
+                </a>
+              </div>
+            </div>
+        </main>
+
+
+        <article class="article">
+            <div class="article__people">
+              <div class="article__people-title">Who to follow</div>
+              <div class="article__people-content">
+                <a href="#" class="article__people-follow">
+                  <img class="people-follow__photo" src="img/steve_jobs.jpeg"/>
+                  <span class="people-follow__name">Steve Jobs</span>
+                  <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
+                </a>
+                <a href="#" class="article__people-follow">
+                  <img class="people-follow__photo" src="img/tim_cook.jpeg"/>
+                  <span class="people-follow__name">Tim Cook</span>
+                  <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
+                </a>
+                <a href="#" class="article__people-follow">
+                  <img class="people-follow__photo" src="img/jeff_bezos.jpeg"/>
+                  <span class="people-follow__name">Jeff Bezos</span>
+                  <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
+                </a>
+              </div>
+              <div class="article__show-all"><a href="#">더 보기</a></div>
+            </div>
+    
+            <div class="article__topic">
+              <div class="article__topic-title">Topic you might like</div>
+              <div class="article__topic-content">
+                <a href="#" class="topic__element">value investing 
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">economy
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">stocks
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">deep learning
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+                <a href="#" class="topic__element">finance
+                  <form class="topic__element--btn" action='#'>
+                    <input type="submit" value="X" class="topic__element--btn-style">
+                  </form>
+                </a>
+              </div>
+              <div class="article__show-all"><a href="#">더 보기</a></div>
+            </div>
+    
+            <div class="footer">
+              <div class="footer__content"><a href="#" >Terms of Service</a></div>
+              <div class="footer__content"><a href="#" >Privacy Policy</a></div>
+              <div class="footer__content"><a href="#" >Cookie Policy</a></div>
+              <div class="footer__content"><a href="#" >Learn More About Us</a></div>
+              <div class="footer__content"><a href="#" >© Kogitobooks.com</a></div>
+            </div>
+          </article>
+    </container>
+    
+    <script 
+        src="https://kit.fontawesome.com/0a0dddc92c.js" 
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

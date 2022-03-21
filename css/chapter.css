@@ -1,0 +1,59 @@
+.chapter {
+    width: 780px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0px 5px;
+    /*border-bottom: 1px solid #505050;*/
+}
+.chapter__number {
+    width: 10px;
+    font-size: 17px;
+    padding: 10px;
+    text-align: end;
+}
+.chapter__cover {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 30px;
+}
+.chapter-intro {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    font-size: 18px;
+    margin-right: 50px;
+    color: #dddddd;
+}
+.chapter__title {
+    width: auto;
+    height: auto;
+}
+.chapter__author {
+    font-size: 13px;
+    color: #909090;
+    margin: 8px 0px 2px;
+}
+.chapter__view {
+    width: 100px;
+    font-size: 17px;
+    margin-right: 50px;
+    text-align: end;
+}
+.chapter__readingtime {
+    width: 100px;
+    font-size: 17px;
+    text-align: end;
+    margin-right: 10px;
+}
+
+
+.chapter__title a:hover{
+    color: #ffffff;
+}
+
+.chapter__author a:hover {
+    color: #ffffff;
+}

@@ -1,0 +1,46 @@
+.people {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 220px;
+    height: 275px;
+    background-color: #151515;
+    border-radius: 7px;
+    margin: 10px 0px 10px;
+}
+.people__cover {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    object-fit: cover;
+    margin: 5px 0px 10px;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+.people__record-delete {
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    color: #151515;
+    font-size: 22px;
+    font-weight: 600;
+    border: 0;
+    z-index: 2;
+    top: 7px;
+    left: 7px;
+}
+.people__name {
+    width: 200px;
+    font-size: 20px;
+    color: #dddddd;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.people__classify {
+    display: flex;
+    width: 200px;
+    max-height: 22px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,18 @@
+/*small desktop
+@media all and (min-width: 1024px) {
+  .nav__row-text {
+    display: none;
+  }
+  .nav {
+    align-items: center;
+  }
+}
+*/
+
+/*tablets
+@media all and (min-width: 768px) {
+  .article {
+    display: none;
+  }
+}
+*/

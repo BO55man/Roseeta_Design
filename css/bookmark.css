@@ -1,0 +1,117 @@
+.bookmark {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 780px;
+    background-color: #101010;
+}
+.bookmark__push-playlist {
+    display: flex;
+    width: 680px;
+    height: auto;
+    justify-content: flex-end;
+}
+.push-playlist {
+    padding: 10px 10px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #505050;
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+}
+.bookmark-header {
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.bookmark-folder {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    font-size: 20px;
+    padding: 10px 40px 10px;
+}
+.bookmark-folder__content {
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #202020;
+}
+.bookmark-folder__img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.bookmark-folder__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#dddddd;
+}
+.bookmark__bookmark-single {
+    width: 100%;
+}
+
+.bookmark-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookmark-single__content {
+    height: auto;
+    width: 95%;
+    background-color: #303030;
+    margin: 10px;
+}
+.bookmark-single__reference {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.reference__cover {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.information__title {
+    font-size: 17px;
+    color: #cccccc;
+    margin: 2px 5px 2px;
+}
+.information__author {
+    font-size: 7px;
+    color: #cccccc;
+    margin: 1px 5px 1px;
+}
+.bookmark-single__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text__quotes {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    text-align: justify;
+    background-color: #202020;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.text__notes {
+    width: 95%;
+    height: auto;
+    margin: 10px 0px 13px;
+    text-align: justify;
+    color: #cccccc;
+    font-weight: 300;
+    line-height: 1.3;
+}
