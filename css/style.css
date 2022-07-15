@@ -1,34 +1,17 @@
-/*default*/
 @import "reset.css";
-@import "mediaquery.css";
-
-/*components*/
-@import "user-profile.css";
-@import "profilehome.css";
-@import "login.css";
-@import "join.css";
-@import "bookalbum.css";
-@import "book.css";
-@import "bookhome.css";
-@import "people.css";
-@import "peoplehome.css";
-@import "chapter.css";
-@import "section.css";
-@import "footer.css";
-
-
-/*container*/
 @import "header.css";
 @import "nav.css";
-@import "home.css";
+@import "main.css";
 @import "article.css";
-@import "search.css";
-@import "mylibrary.css";
-@import "bookmark.css";
-@import "content.css";
-@import "welcome.css";
-
-
-
-
-
+@import "container.css";
+@import "section.css";
+@import "book.css";
+@font-face {
+    font-family: 'Noto Sans KR';
+    src:url('./fonts/NotoSansKR-Thin.woff') format('woff'),
+        url('./fonts/NotoSansKR-Light.woff') format('woff'),
+        url('./fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('./fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('./fonts/NotoSansKR-Bold.woff') format('woff'),
+        url('./fonts/NotoSansKR-Black.woff') format('woff');
+}

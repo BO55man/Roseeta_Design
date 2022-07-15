@@ -81,10 +81,12 @@ footer {
 }
 
 body {
-	background-color: black;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #101010;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-  
-  
+* {
+	box-sizing: border-box;
+}
