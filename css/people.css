@@ -1,0 +1,102 @@
+.people-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 220px;
+    height: 275px;
+    border-radius: 7px;
+    margin: 10px 0px 10px;
+}
+.people-card__cover {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    object-fit: cover;
+    margin: 5px 0px 10px;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+.people-card__name {
+    width: 200px;
+    font-size: 20px;
+    color: #dddddd;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.people-card__classify {
+    display: flex;
+    width: 200px;
+    max-height: 22px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.people-card:hover {
+    background-color: #202020;
+}
+
+
+
+
+
+
+.chapter {
+    width: 780px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0px 5px;
+    /*border-bottom: 1px solid #505050;*/
+}
+.chapter__number {
+    width: 10px;
+    font-size: 17px;
+    padding: 10px;
+    text-align: end;
+}
+.chapter__cover {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 30px;
+}
+.chapter-intro {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    font-size: 18px;
+    margin-right: 50px;
+    color: #dddddd;
+}
+.chapter__title {
+    width: auto;
+    height: auto;
+}
+.chapter__author {
+    font-size: 13px;
+    color: #909090;
+    margin: 8px 0px 2px;
+}
+.chapter__view {
+    width: 100px;
+    font-size: 17px;
+    margin-right: 50px;
+    text-align: end;
+}
+.chapter__readingtime {
+    width: 100px;
+    font-size: 17px;
+    text-align: end;
+    margin-right: 10px;
+}
+
+
+.chapter__title a:hover{
+    color: #ffffff;
+}
+
+.chapter__author a:hover {
+    color: #ffffff;
+}

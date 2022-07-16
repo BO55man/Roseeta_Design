@@ -1,0 +1,168 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #101010;
+}
+.nav__link {
+    border-radius: 50%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    min-width: 270px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: #101010;
+}
+
+.logo__name{
+    margin: 0px 0px 0px 15px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.header__logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+.header__location {
+    display: flex;
+    align-items: center;
+    width: 780px;
+    min-width: 780px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    background-color: #141414;
+    /*border: solid 1px;
+    border-color: #000000 #000000 #909090 #000000; */
+    box-sizing: border-box;
+}
+.search__form--input {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+    background-position: 5px center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #ffffff;
+
+    padding: 5px 5px;
+    text-indent: 40px;
+    font-size: 16px;
+    background-color: #252525;
+    
+    width: 480px;
+    height: 40px;
+    border-radius: 4px;
+}
+.header--mylibrary {
+    display: flex;
+    width: 780px;
+    height: 60px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    color:#eeeeee;
+}
+.mylibrary__header--click {
+    padding: 10px 8px 10px 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #303030;
+}
+.mylibrary__header--noclick {
+    padding: 10px 8px 10px 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.header__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    min-width: 270px;
+    height: 100%;
+    background-color:#101010;
+    /*border-left: solid 1px;
+    border-color:#909090;*/
+}
+
+
+.user__link {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 240px;
+    border-radius: 25px;
+    padding-left: 7px;
+}
+.user__link:hover {
+    background-color: #202020;
+}
+.user__image {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+}
+.user__name {
+    font-size: 15px;
+    padding: 15px;
+    color: #eeeeee
+}
+
+.header__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #101010;
+}
+.header__option a {
+    border-radius: 50%;
+}
