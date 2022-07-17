@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__nav">
-        <a href="#" class="nav__link">
+        <a href="search__answer--book.html" class="nav__link">
           <span
             class="iconify"
             data-icon="bi:list"
@@ -26,18 +26,18 @@
           <div class="logo__name">Roseeta</div>
         </a>
       </div>
-      <div class="header__location search">
+      <div class="header__location">
         <form class="search__form">
           <input
             type="search"
-            class="search__form--input"
+            class="search__input"
             placeholder="책, 작가, 플레이리스트"
           />
         </form>
       </div>
       <div class="header__user">
         <a href="#" class="user__link">
-          <img class="user__image" src="img/elon_musk.jpeg" />
+          <img class="user__img" src="img/elon_musk.jpeg" />
           <span class="user__name">유저이름</span>
         </a>
       </div>
@@ -55,7 +55,7 @@
     </header>
 
     <container class="container">
-      <nav class="container__nav">
+      <nav class="nav">
         <div class="nav__box">
           <a href="index.html" class="nav__item">
             <span
@@ -65,7 +65,7 @@
               data-width="30"
               data-height="30"
             ></span>
-            <span class="nav__item__text">홈</span>
+            <span class="nav__text">홈</span>
           </a>
         </div>
         <div class="nav__box">
@@ -77,11 +77,11 @@
               data-width="30"
               data-height="30"
             ></span>
-            <span class="nav__item__text">검색</span>
+            <span class="nav__text">검색</span>
           </a>
         </div>
         <div class="nav__box">
-          <a href="#" class="nav__item">
+          <a href="mylibrary--book.html" class="nav__item">
             <span
               class="iconify"
               data-icon="bx:library"
@@ -89,7 +89,7 @@
               data-width="30"
               data-height="30"
             ></span>
-            <span class="nav__item__text">나의 서재</span>
+            <span class="nav__text">나의 서재</span>
           </a>
         </div>
         <div class="nav__box">
@@ -101,53 +101,53 @@
               data-width="30"
               data-height="30"
             ></span>
-            <span class="nav__item__text">북마크</span>
+            <span class="nav__text">북마크</span>
           </a>
         </div>
       </nav>
-      <main class="container__main">
-        <div class="section--search">
+      <main class="main">
+        <div class="section--search-result">
           <div class="search__header">
-            <a href="search__answer--book.html" class="search__header--noclick">책</a>
-            <a href="search__answer--chapter.html" class="search__header--click">챕터</a>
-            <a href="search__answer--author.html" class="search__header--noclick">저자</a>
+            <a href="search-result--book.html" class="search__header--click">책</a>
+            <a href="search-result--chapter.html" class="search__header--noclick">챕터</a>
+            <a href="search-result--author.html" class="search__header--noclick">저자</a>
           </div>
         </div>
-        <div class="section">
-          <div class="section__header">
-            <h2 class="section__title"></h2>
-            <a href="#" class="section__show-all"></a>
+        <div class="section--seach-result">
+            <div class="section__header">
+              <h2 class="section__title"></h2>
+              <a href="#" class="section__show-all"></a>
+            </div>
+            <div class="section__content">
+              <a href="#" class="book--card">
+                <img class="book__cover--card" src="img/bookcover.jpg" />
+                <span class="book__author--card"
+                  >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+                  저자다.</span
+                >
+                <span class="book__title--card"
+                  >밥 빠르고 먹는 방법 dk dkdswod</span
+                >
+              </a>
+              <a href="#" class="book--card">
+                <img class="book__cover--card" src="img/bookcover.jpg" />
+                <span class="book__author--card">author</span>
+                <span class="book__title--card"
+                  >안녕하세요? 제 강아지 이름은 멍멍이 이구요, 저의 이름은
+                  댕댕이입니다.</span
+                >
+              </a>
+              <a href="#" class="book--card">
+                <img class="book__cover--card" src="img/bookcover.jpg" />
+                <span class="book__author--card">조용필과 삼형제</span>
+                <span class="book__title--card"
+                  >어이 중문과! 니 알바비 날리따</span
+                >
+              </a>
+            </div>
           </div>
-          <div class="section__content">
-            <a href="#" class="book-card">
-              <img class="book-card__cover" src="img/bookcover.jpg" />
-              <span class="book-card__author"
-                >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-                저자다.</span
-              >
-              <span class="book-card__title"
-                >밥 빠르고 먹는 방법 dk dkdswod</span
-              >
-            </a>
-            <a href="#" class="book-card">
-              <img class="book-card__cover" src="img/bookcover.jpg" />
-              <span class="book-card__author">author</span>
-              <span class="book-card__title"
-                >안녕하세요? 제 강아지 이름은 멍멍이 이구요, 저의 이름은
-                댕댕이입니다.</span
-              >
-            </a>
-            <a href="#" class="book-card">
-              <img class="book-card__cover" src="img/bookcover.jpg" />
-              <span class="book-card__author">조용필과 삼형제</span>
-              <span class="book-card__title"
-                >어이 중문과! 니 알바비 날리따</span
-              >
-            </a>
-          </div>
-        </div>
       </main>
-      <article class="container__article"></article>
+      <article class="article"></article>
     </container>
 
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>

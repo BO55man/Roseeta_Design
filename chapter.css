@@ -1,46 +1,38 @@
-.people-card {
+.chapter-header {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 220px;
-    height: 275px;
-    border-radius: 7px;
-    margin: 10px 0px 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #181818;
+    margin-bottom: 5px;
+    color: #808080;
+    font-size: 16px;
 }
-.people-card__cover {
-    width: 200px;
-    height: 200px;
-    align-self: center;
-    object-fit: cover;
-    margin: 5px 0px 10px;
-    border-radius: 100px;
-    box-sizing: border-box;
+.chapter-header__number {
+    width: 10px;
+    padding: 10px;
+    text-align: end;
 }
-.people-card__name {
-    width: 200px;
-    font-size: 20px;
-    color: #dddddd;
-    margin-left: 10px;
-    margin-bottom: 10px;
+.chapter-header__cover {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
 }
-.people-card__classify {
-    display: flex;
-    width: 200px;
-    max-height: 22px;
-    flex-wrap: wrap;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-bottom: 8px;
+.chapter-header__chapter {
+    width: 450px;
+    margin-right: 50px;
 }
-.people-card:hover {
-    background-color: #202020;
+.chapter-header__view {
+    width: 100px;
+    margin-right: 50px;
+    text-align: end;
 }
-
-
-
-
-
-
+.chapter-header__readingtime {
+    width: 100px;
+    text-align: end;
+    margin-right: 10px;
+}
 .chapter {
     width: 780px;
     height: auto;
@@ -90,13 +82,4 @@
     font-size: 17px;
     text-align: end;
     margin-right: 10px;
-}
-
-
-.chapter__title a:hover{
-    color: #ffffff;
-}
-
-.chapter__author a:hover {
-    color: #ffffff;
 }
