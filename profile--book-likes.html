@@ -78,17 +78,40 @@
       </div>
     </nav>
     <main class="main">
-      <div class="mylibrary__header">
-        <a href="mylibrary--book.html" class="mylibrary__header--noclick">책</a>
-        <a href="mylibrary--chapter.html" class="mylibrary__header--click"
-          >챕터</a
-        >
-        <a href="mylibrary--author.html" class="mylibrary__header--noclick"
-          >저자</a
-        >
+      <div class="main__header">
+        <a href="#" class="main__back-btn">
+          <span class="iconify back" data-icon="ep:back"></span>
+        </a>
+        <span>Ashlee Vance</span>
       </div>
-      <div class="section--mylibrary">
-        <div class="section__content--chapter">
+      <div class="section--profile">
+        <div class="book--profile">
+          <img class="book__cover--profile" src="img/bookcover.jpg" />
+          <div class="book__ctg--profile">책</div>
+          <div class="book__title--profile">
+            Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future
+          </div>
+          <a href="profile--author.html" class="author-profile__link">
+            <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
+            <div>Ashlee Vance</div>
+          </a>
+          <div class="book__guide">
+            <div class="book__read--btn"><a href="#">처음부터 읽기</a></div>
+            <div class="book__read--btn"><a href="#">이어서 읽기</a></div>
+          </div>
+          <div class="book__like--btn">
+            <a href="profile--book.html">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="#">
           <div class="chapter-header">
             <div class="chapter-header__number"></div>
             <div class="chapter-header__cover"></div>

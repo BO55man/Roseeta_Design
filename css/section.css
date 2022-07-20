@@ -13,7 +13,7 @@
     width: 780px;
     padding: 20px 0px 20px;
 }
-.section--home:nth-child(odd) {
+.section--home:nth-child(even) {
     background-color: #191919;
 }
 .section--search {
@@ -26,6 +26,9 @@
     width: 780px;
     padding: 0px 0px 0px;
 }
+
+
+
 .section__header {
     display: flex;
     justify-content: space-between;
@@ -50,5 +53,6 @@
     align-items: center;
     justify-items: center;
 }
-
-
+.section__content--chapter {
+    /* empty */
+}

@@ -47,8 +47,8 @@
 .book--profile {
     display: grid;
     grid-template-columns: 350px 430px;
-    grid-template-rows: 50px 200px 100px; 
-    background-color: #141414;
+    grid-template-rows: 50px 200px 100px 80px; 
+    background-color: #191919;
 }
 .book__cover--profile {
     grid-column: 1;
@@ -71,4 +71,31 @@
     margin-right: 10px;
     margin-top: 10px;
     color: #ffffff;
+}
+
+
+.book__guide {
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #191919;
+}
+.book__read--btn {
+    padding: 10px 8px 10px 8px;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #252525;
+}
+.book__read--btn:hover {
+    background-color: #404040;
+}
+
+.book__like--btn {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 4;
 }

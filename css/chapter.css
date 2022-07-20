@@ -4,8 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #181818;
-    margin-bottom: 5px;
+    background-color: #212121;
     color: #808080;
     font-size: 16px;
 }
@@ -39,8 +38,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 5px 0px 5px;
+    padding: 5px 0px 5px;
     /*border-bottom: 1px solid #505050;*/
+}
+.chapter:nth-child(odd) {
+    background-color: #191919;
 }
 .chapter__number {
     width: 10px;

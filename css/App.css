@@ -1,16 +1,25 @@
 @import "reset.css";
-@import "header.css";
+
+
+
+/* 페이지 위치 */
+@import "mylibrary.css";
+@import "search.css";
+
+/* 박스 */
+@import "article.css";
 @import "nav.css";
 @import "main.css";
-@import "article.css";
 @import "section.css";
-@import "book.css";
+
+/* 객체 */
 @import "author.css";
-@import "logo.css";
-@import "search.css";
-@import "mylibrary.css";
-@import "user.css";
+@import "book.css";
 @import "chapter.css";
+@import "logo.css";
+@import "option.css";
+@import "user.css";
+
 @font-face {
     font-family: 'Noto Sans KR';
     src:url('./fonts/NotoSansKR-Thin.woff') format('woff'),
@@ -20,19 +29,10 @@
         url('./fonts/NotoSansKR-Bold.woff') format('woff'),
         url('./fonts/NotoSansKR-Black.woff') format('woff');
 }
-.main {
-    height: auto;
-    width: 780px;
-    background-color: #141414;
-}
-.article {
-    display: flex;
-    height: 92vh;
-    width: 330px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 60px;
-}
-.back {
-    margin-right: 10px;
-}
+
+
+
+
+
+
+
