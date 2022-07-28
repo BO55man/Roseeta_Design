@@ -1,0 +1,28 @@
+.logo__header {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    min-width: 270px;
+    height: 60px;
+    padding-right: 30px;
+}
+.logo__header a {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+}
+.logo__name{
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+.logo__name--viewer {
+    margin: 0px 0px 0px 15px;
+    text-align: center;
+    height: 45px;
+    font-size: 40px;
+    font-weight: 600;
+}

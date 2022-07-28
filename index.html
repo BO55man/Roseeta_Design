@@ -4,259 +4,283 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Home / Kogitobooks</title>
+    <link rel="stylesheet" href="css/App.css" />
+    <title>Roseeta</title>
   </head>
-
-  <body>
-    <header class="header">
-      <h1 class="site-info">
-        <div class="site-title">
-          <a class="Kogito_logo" href="index.html">
-            <img class="site-title__logo" src="img/logo.svg">
-          </a>
-          <a class="site-title__name" href="index.html">Kogito Books</a>
-        </div>  
-      </h1>
-      <div class="page-info"><div>Home</div></div>
-      <div class="user-info">
-        <div>
-          <a href="#" class="user-profile">
-            <img class="user-profile__image" src="img/elon_musk.jpeg" />
-            <span class="user-profile__name">Dongin Jung</span>
-            <span class="user-profile__btn">
-              <i class="fas fa-caret-down"></i>
-            </span>
+  <body class="body">
+    <nav class="nav">
+      <div class="nav__header">
+        <div class="nav__link"></div>
+        <div class="logo__header">
+          <a href="index.html" class="logo__link">
+            <img src="img/RoseetaLogo.svg" width="40" height="40" />
+            <div class="logo__name">Roseeta</div>
           </a>
         </div>
       </div>
-    </header>
-
-    <container class="container">
-      <nav>
-        <ul class="nav">
-          <li class="nav__row">
-            <a href="index.html">
-              <i class="fas fa-home"></i>
-              <span class="nav__row-text">홈</span>
-            </a>
-          </li>
-          <li class="nav__row">
-            <a href="search.html">
-              <i class="fas fa-search"></i>
-              <span class="nav__row-text">검색</span>
-            </a>
-          </li>
-          <li class="nav__row">
-            <a href="mylibrary-bookalbum.html">
-              <i class="fas fa-book"></i>
-              <span class="nav__row-text">내 라이브러리</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <main class="home">
-        <div class="section">
-          <div class="section__header">
-            <div class="section__title">이전에 보던 글이에요</div>
-            <a href="#" class="section__show-all">모두 보기</a>
-          </div>
-          <div class="section__content">
-            <a href="#" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/bitcoin.jpeg"/>
-                <div class="bookalbum__cover--design">비트코인 믹스</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">비트코인 믹스</li>
-                <li class="bookalbum__contain">
-                  <div>서른살, 비트코인으로 은퇴</div>,
-                  <div>생애처음 비트코인</div>등
-                </li>
-              </ul>
-            </a>
-            <a href="#" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/mars.jpeg"/>
-                <div class="bookalbum__cover--design">화성 에세이</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">화성 에세이</li>
-                <li class="bookalbum__contain">
-                  <div>화성, 또 하나의 생명</div>,
-                  <div>2030 화성 오디세이</div>등
-                </li>
-              </ul>
-            </a>
-            <a href="#" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/neil_armstrong.jpeg"/>
-                <div class="bookalbum__cover--design">닐 암스트롱에 관하여</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">닐 암스트롱에 관하여</li>
-                <li class="bookalbum__contain">
-                  <div>닐 암스트롱의 월석</div>,
-                  <div>First on the moon</div>,
-                  <div>Apollo and America</div>등
-                </li>
-              </ul>
-            </a>
-          </div>
+      <div class="nav__box">
+        <a href="index.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="ci:home-alt-fill"
+            style="color: black"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">홈</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="ant-design:search-outlined"
+            style="color: black"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">검색</span>
+        </a>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main__header">
+        <div class="main__header--home">Home</div>
+      </div>
+      <div class="section--home">
+        <div class="section__header">
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
         </div>
-        <div class="section">
-          <div class="section__header">
-            <div class="section__title">잠이 오지 않는 당신을 위해</div>
-            <a href="#" class="section__show-all">모두 보기</a>
-          </div>
-          <div class="section__content">
-            <a href="#" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/philosophy.jpeg"/>
-                <div class="bookalbum__cover--design">철학 겉핥기</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">철학 겉핥기</li>
-                <li class="bookalbum__contain">
-                  <div>소피의 세계</div>,
-                  <div>순수이성비판</div>등
-                </li>
-              </ul>
-            </a>
-            <a href="#" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/photography.jpeg"/>
-                <div class="bookalbum__cover--design">사진이란 이런 겁니다</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">사진이란 이런 겁니다</li>
-                <li class="bookalbum__contain">
-                  <div>출사를 나가보자</div>,
-                  <div>카메라 렌즈 그 너머의 세계</div>등
-                </li>
-              </ul>
-            </a>
-            <a href="#" class="book">
-              <img class="book__cover" src="img/music_at_the_limits.jpeg"/>
-              <ul>
-                <li class="book__title">Music at the limits </li>
-                <li class="book__author">Edward W. Said</li>
-              </ul>  
-            </a>
-          </div>  
+        <div class="section__content">
+          <a href="PoP--profile.html" class="book--card">
+            <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+            <span class="book__author--card"
+              >Jearl Walker, David Halliday, Robert Resnick</span
+            >
+            <span class="book__title--card"
+              >Principles of Physics 10th Edition</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법과 라면 정확하ㅇㄹㄷㅈㅇㄹ 먹는 방법ㅇ니다.</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
         </div>
-        <div class="section">
-          <div class="section__header">
-            <div class="section__title">오늘 하루도 고생했어요</div>
-            <a href="#" class="section__show-all">모두 보기</a>
-          </div>
-          <div class="section__content">
-            <a href="#" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/inner_peace.jpeg"/>
-                <div class="bookalbum__cover--design">내면의 평화를 찾아서</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">내면의 평화를 찾아서</li>
-                <li class="bookalbum__contain">
-                  <div>명상에 대한 거의 모든 것</div>,
-                  <div>소마지성을 깨워라</div>등
-                </li>
-              </ul>
-            </a>
-            <a href="bookhome.html" class="book">
-              <img class="book__cover" src="img/elon_musk_tesla.jpeg"/>
-              <ul>
-                <li class="book__title">Elon Musk: Tesla, ... </li>
-                <li class="book__author">Ashlee Vance</li>
-              </ul>  
-            </a>
-            <a href="bookalbumhome.html" class="bookalbum">
-              <div class="bookalbum__cover">
-                <img class="bookalbum__cover--img" src="img/tesla.jpeg"/>
-                <div class="bookalbum__cover--design">테슬라 성공스토리</div>
-              </div>
-              <ul>
-                <li class="bookalbum__title">테슬라 성공스토리</li>
-                <li class="bookalbum__contain">
-                  <div>자동차, 전기에너지, 그리고 그 밖의 것들</div>,
-                  <div>친환경 에너지 속으로</div>등
-                </li>
-              </ul>
-            </a>
-          </div>
+      </div>
+      <div class="section--home">
+        <div class="section__header">
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
         </div>
-      </main>
-
-      <article class="article">
-        <div class="article__people">
-          <div class="article__people-title">Who to follow</div>
-          <div class="article__people-content">
-            <a href="#" class="article__people-follow">
-              <img class="people-follow__photo" src="img/steve_jobs.jpeg"/>
-              <span class="people-follow__name">Steve Jobs</span>
-              <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
-            </a>
-            <a href="#" class="article__people-follow">
-              <img class="people-follow__photo" src="img/tim_cook.jpeg"/>
-              <span class="people-follow__name">Tim Cook</span>
-              <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
-            </a>
-            <a href="#" class="article__people-follow">
-              <img class="people-follow__photo" src="img/jeff_bezos.jpeg"/>
-              <span class="people-follow__name">Jeff Bezos</span>
-              <form action='#'><input class="people-follow__btn" type="submit" value="Follow"></form> <!--action에 php주소 입력-->
-            </a>
-          </div>
-          <div class="article__show-all"><a href="#">더 보기</a></div>
+        <div class="section__content">
+          <a href="PoP--profile.html" class="book--card">
+            <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+            <span class="book__author--card"
+              >Jearl Walker, David Halliday, Robert Resnick</span
+            >
+            <span class="book__title--card"
+              >Principles of Physics 10th Edition</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
         </div>
-
-        <div class="article__topic">
-          <div class="article__topic-title">Topic you might like</div>
-          <div class="article__topic-content">
-            <a href="#" class="topic__element">value investing 
-              <form class="topic__element--btn" action='#'>
-                <input type="submit" value="X" class="topic__element--btn-style">
-              </form>
-            </a>
-            <a href="#" class="topic__element">economy
-              <form class="topic__element--btn" action='#'>
-                <input type="submit" value="X" class="topic__element--btn-style">
-              </form>
-            </a>
-            <a href="#" class="topic__element">stocks
-              <form class="topic__element--btn" action='#'>
-                <input type="submit" value="X" class="topic__element--btn-style">
-              </form>
-            </a>
-            <a href="#" class="topic__element">deep learning
-              <form class="topic__element--btn" action='#'>
-                <input type="submit" value="X" class="topic__element--btn-style">
-              </form>
-            </a>
-            <a href="#" class="topic__element">finance
-              <form class="topic__element--btn" action='#'>
-                <input type="submit" value="X" class="topic__element--btn-style">
-              </form>
-            </a>
-          </div>
-          <div class="article__show-all"><a href="#">더 보기</a></div>
+      </div>
+      <div class="section--home">
+        <div class="section__header">
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
         </div>
-
-        <div class="footer">
-          <div class="footer__content"><a href="#" >Terms of Service</a></div>
-          <div class="footer__content"><a href="#" >Privacy Policy</a></div>
-          <div class="footer__content"><a href="#" >Cookie Policy</a></div>
-          <div class="footer__content"><a href="#" >Learn More About Us</a></div>
-          <div class="footer__content"><a href="#" >© Kogitobooks.com</a></div>
+        <div class="section__content">
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
         </div>
-      </article>
-    </container>
-
-    <script
-      src="https://kit.fontawesome.com/0a0dddc92c.js"
-      crossorigin="anonymous"
-    ></script>
+      </div>
+      <div class="section--home">
+        <div class="section__header">
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
+        </div>
+        <div class="section__content">
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="section--home">
+        <div class="section__header">
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
+        </div>
+        <div class="section__content">
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="section--home">
+        <div class="section__header">
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
+        </div>
+        <div class="section__content">
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+          <a href="profile--book3-MVP.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
+          </a>
+        </div>
+      </div>
+    </main>
+    <article class="article">
+      <div class="article__header">
+        <div class="user__header">
+        </div>
+        <div class="option__header"></div>
+      </div>
+    </article>
   </body>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </html>

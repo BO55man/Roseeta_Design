@@ -1,0 +1,64 @@
+@import "reset.css";
+
+
+
+/* 페이지 위치 */
+@import "mylibrary.css";
+@import "search.css";
+
+/* 박스 */
+@import "article.css";
+@import "nav.css";
+@import "main.css";
+@import "section.css";
+
+/* 객체 */
+@import "author.css";
+@import "book.css";
+@import "chapter.css";
+@import "logo.css";
+@import "option.css";
+@import "user.css";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src:url('./fonts/NotoSansKR-Thin.woff') format('woff'),
+        url('./fonts/NotoSansKR-Light.woff') format('woff'),
+        url('./fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('./fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('./fonts/NotoSansKR-Bold.woff') format('woff'),
+        url('./fonts/NotoSansKR-Black.woff') format('woff');
+}
+
+p {
+    text-indent: 30px;
+    hyphens: auto;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 10px 0px 10px;
+}
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 8px 0px 8px;
+}
+h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 6px 0px 6px;
+}
+h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 4px 0px 4px;
+}
+.lump {
+    margin: 60px 0px 60px 0px;
+}
