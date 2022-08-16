@@ -32,8 +32,7 @@ body {
 	line-height: 1;
 	font-family: 'Noto Sans KR', sans-serif;
 	background-color: #eeeeee;
-    display: flex;
-    justify-content: center;
+	font-size: 16px;
 }
 
 ol, ul {
@@ -73,12 +72,7 @@ nav,
 main,
 article,
 footer{
-  color: #202020;
-}
-
-
-footer {
-	width: 1440px;
+  color: #303030;
 }
 
 ::-webkit-scrollbar {

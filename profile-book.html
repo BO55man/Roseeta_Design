@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/App.css" />
-    <title>Roseeta</title>
-  </head>
-  <body class="body">
-    <nav class="nav">
-      <div class="nav__header">
-        <div class="nav__link"></div>
-        <div class="logo__header">
-          <a href="index.html" class="logo__link">
-            <img src="img/RoseetaLogo.svg" width="40" height="40" />
-            <div class="logo__name">Roseeta</div>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/App.css" />
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <title>Roseeta</title>
+</head>
+<body>
+  <nav class="nav">
+    <header class="nav__header">
+      <div class="nav__link"></div>
+      <div class="logo__header">
+        <a href="index.html" class="logo__link--nomobile">
+          <img class="logo__img" src="img/RoseetaLogo.svg"/>
+          <div class="logo__name">Roseeta</div>
+        </a>
       </div>
+    </header>
+    <div class="nav__bar">
       <div class="nav__box">
         <a href="index.html" class="nav__item">
           <span
@@ -42,63 +44,91 @@
           <span class="nav__text">검색</span>
         </a>
       </div>
-    </nav>
-    <main class="main">
-      <div class="main__header">
-        <a href="#" class="main__back-btn">
-          <span class="iconify back" data-icon="ep:back"></span>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <span class="iconify" data-icon="bx:library" style="color: black;" data-width="30" data-height="30"></span>
+          <span class="nav__text">내 라이브러리</span>
         </a>
-        <span>Ashlee Vance</span>
       </div>
-      <div class="section--profile">
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <img src="img/elon_musk.jpeg" class="nav__user-profile" />
+          <span class="nav__text">{{ Username }}</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+      <header class="main__header--nohome">
+        <div class="main__location-front--profile">
+          <a href="#" class="main__back-btn">
+            <span class="iconify back" data-icon="ep:back" data-height="30px" data-width="30px"></span>
+          </a>
+          <span class="main__location--nohome">책</span>
+        </div>
+        <div class="main__location-back--profile">
+          <span class="iconify icon-outlined" data-icon="ant-design:heart-outlined" data-width="36" data-height="36"></span>
+        </div>
+      </header>
+      <section class="section--profile">
         <div class="book--profile">
-          <img class="book__cover--profile" src="img/bookcover.jpg" />
+          <div class="book__cover-box">
+            <img class="book__cover--profile" src="img/bookcover8.jpg" />
+          </div>
+          
           <div class="book__ctg--profile">책</div>
           <div class="book__title--profile">
-            Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future
+            마법천자문 53 결정을 내리다! 결단할 결
           </div>
           <div class="book__author--profile">
-            <a href="profile--author.html" class="author-profile__link">
-              <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
-              <div>Ashlee Vance</div>
+            <div class="book__author-text">저자</div>
+            <a href="profile-author.html" class="author-profile__link">
+                <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
+                <div>김대중</div>
             </a>
-            <a href="profile--author.html" class="author-profile__link">
-              <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
-              <div>Ashlee Vance</div>
+            <a href="profile-author.html" class="author-profile__link">
+                <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
+                <div>노무현</div>
             </a>
-            <a href="profile--author.html" class="author-profile__link">
-              <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
-              <div>Ashlee Vance</div>
+            <a href="profile-author.html" class="author-profile__link">
+                <img class="author__cover--book-profile" src="img/elon_musk.jpeg" />
+                <div>문재인</div>
             </a>
           </div>
           <div class="book__like--btn">
           </div>
+  
         </div>
         <div class="section__content--chapter">
           <div class="chapter-header">
-            <div class="chapter-header__dropdown"></div>
+            <div class="chapter-header__dropdown">목차</div>
             <div class="chapter-header__cover"></div>
             <div class="chapter-header__chapter"></div>
             <div class="chapter-header__view">조회수</div>
-            <div class="chapter-header__likes"></div>
+            <div class="chapter-header__likes">좋아요</div>
           </div>
           <div class="chapter__top">
             <div class="chapter__top-content">
                 <button class="chapter__btn--top">
                     <span class="iconify" data-icon="fluent:triangle-down-12-filled" data-width="20" data-height="20"></span>
                 </button>
+                <div class="chapter__cover--top">
+                    <a href="profile-book.html">
+                        <img class="chapter__cover" src="img/bookcover.jpg"/>
+                    </a>
+                </div>
                 <div class="chapter-intro--top">
                     <div class="chapter__title">
                       <a href="chapter-viewer.html">Elon's world is fucking. Because it is too hard to understand his mind.</a>
                     </div>
                     <div class="chapter__author-list">
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Ashlee Vance</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Elon musk</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">JJS</span>
                       </a>
                     </div>
@@ -110,18 +140,23 @@
                     <button class="chapter__btn--mid">
                         <span class="iconify" data-icon="fluent:triangle-down-12-filled" data-width="20" data-height="20"></span>
                     </button>
+                    <div class="chapter__cover--mid">
+                        <a href="profile-book.html">
+                            <img class="chapter__cover" src="img/bookcover.jpg"/>
+                        </a>
+                    </div>
                     <div class="chapter-intro--mid">
                         <div class="chapter__title">
                           <a href="chapter-viewer.html">Paypal mafia boss</a>
                         </div>
                         <div class="chapter__author-list">
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">Ashlee Vance</span>
                           </a>/
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">Elon musk</span>
                           </a>/
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">JJS</span>
                           </a>
                         </div>
@@ -130,18 +165,23 @@
                 </div>
                 <div class="chapter__bot">
                     <div class="chapter__bot-content">
+                        <div class="chapter__cover--bot">
+                            <a href="profile-book.html">
+                                <img class="chapter__cover" src="img/bookcover.jpg"/>
+                            </a>
+                        </div>
                         <div class="chapter-intro--bot">
                             <div class="chapter__title">
                               <a href="chapter-viewer.html">Paypal mafia boss</a>
                             </div>
                             <div class="chapter__author-list">
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">Ashlee Vance</span>
                               </a>/
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">Elon musk</span>
                               </a>/
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">JJS</span>
                               </a>
                             </div>
@@ -151,18 +191,23 @@
                 </div>
                 <div class="chapter__bot">
                     <div class="chapter__bot-content">
+                        <div class="chapter__cover--bot">
+                            <a href="profile-book.html">
+                                <img class="chapter__cover" src="img/bookcover.jpg"/>
+                            </a>
+                        </div>
                         <div class="chapter-intro--bot">
                             <div class="chapter__title">
                               <a href="chapter-viewer.html">Paypal mafia boss</a>
                             </div>
                             <div class="chapter__author-list">
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">Ashlee Vance</span>
                               </a>/
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">Elon musk</span>
                               </a>/
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">JJS</span>
                               </a>
                             </div>
@@ -172,18 +217,23 @@
                 </div>
                 <div class="chapter__bot">
                     <div class="chapter__bot-content">
+                        <div class="chapter__cover--bot">
+                            <a href="profile-book.html">
+                                <img class="chapter__cover" src="img/bookcover.jpg"/>
+                            </a>
+                        </div>
                         <div class="chapter-intro--bot">
                             <div class="chapter__title">
                               <a href="chapter-viewer.html">Paypal mafia boss</a>
                             </div>
                             <div class="chapter__author-list">
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">Ashlee Vance</span>
                               </a>/
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">Elon musk</span>
                               </a>/
-                              <a href="profile--author.html">
+                              <a href="profile-author.html">
                                 <span class="chapter__author">JJS</span>
                               </a>
                             </div>
@@ -194,18 +244,23 @@
             </div>
             <div class="chapter__mid">
                 <div class="chapter__mid-content">
+                    <div class="chapter__cover--mid">
+                        <a href="profile-book.html">
+                            <img class="chapter__cover" src="img/bookcover.jpg"/>
+                        </a>
+                    </div>
                     <div class="chapter-intro--mid">
                         <div class="chapter__title">
                           <a href="chapter-viewer.html">Paypal mafia boss</a>
                         </div>
                         <div class="chapter__author-list">
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">Ashlee Vance</span>
                           </a>/
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">Elon musk</span>
                           </a>/
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">JJS</span>
                           </a>
                         </div>
@@ -218,18 +273,23 @@
                     <button class="chapter__btn--mid">
                         <span class="iconify" data-icon="fluent:triangle-right-12-filled" data-width="20" data-height="20"></span>
                     </button>
+                    <div class="chapter__cover--mid">
+                        <a href="profile-book.html">
+                            <img class="chapter__cover" src="img/bookcover.jpg"/>
+                        </a>
+                    </div>
                     <div class="chapter-intro--mid">
                         <div class="chapter__title">
                           <a href="chapter-viewer.html">Paypal mafia boss</a>
                         </div>
                         <div class="chapter__author-list">
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">Ashlee Vance</span>
                           </a>/
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">Elon musk</span>
                           </a>/
-                          <a href="profile--author.html">
+                          <a href="profile-author.html">
                             <span class="chapter__author">JJS</span>
                           </a>
                         </div>
@@ -243,18 +303,23 @@
                 <button class="chapter__btn--top">
                     <span class="iconify" data-icon="fluent:triangle-right-12-filled" data-width="20" data-height="20"></span>
                 </button>
+                <div class="chapter__cover--top">
+                    <a href="profile-book.html">
+                        <img class="chapter__cover" src="img/bookcover.jpg"/>
+                    </a>
+                </div>
                 <div class="chapter-intro--top">
                     <div class="chapter__title">
                       <a href="chapter-viewer.html">Elon's world is fucking. Because it is too hard to understand his mind.</a>
                     </div>
                     <div class="chapter__author-list">
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Ashlee Vance</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Elon musk</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">JJS</span>
                       </a>
                     </div>
@@ -267,18 +332,23 @@
                 <button class="chapter__btn--top">
                     <span class="iconify" data-icon="fluent:triangle-right-12-filled" data-width="20" data-height="20"></span>
                 </button>
+                <div class="chapter__cover--top">
+                    <a href="profile-book.html">
+                        <img class="chapter__cover" src="img/bookcover.jpg"/>
+                    </a>
+                </div>
                 <div class="chapter-intro--top">
                     <div class="chapter__title">
                       <a href="chapter-viewer.html">Elon's world is fucking. Because it is too hard to understand his mind.</a>
                     </div>
                     <div class="chapter__author-list">
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Ashlee Vance</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Elon musk</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">JJS</span>
                       </a>
                     </div>
@@ -288,18 +358,23 @@
           </div>
           <div class="chapter__top">
             <div class="chapter__top-content">
+                <div class="chapter__cover--top">
+                    <a href="profile-book.html">
+                        <img class="chapter__cover" src="img/bookcover.jpg"/>
+                    </a>
+                </div>
                 <div class="chapter-intro--top">
                     <div class="chapter__title">
                       <a href="chapter-viewer.html">Elon's world is fucking. Because it is too hard to understand his mind.</a>
                     </div>
                     <div class="chapter__author-list">
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Ashlee Vance</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">Elon musk</span>
                       </a>/
-                      <a href="profile--author.html">
+                      <a href="profile-author.html">
                         <span class="chapter__author">JJS</span>
                       </a>
                     </div>
@@ -307,22 +382,20 @@
                 <div class="chapter__view--top">132,411,902</div>
             </div>
           </div>
-
-
-
-
-
+  
+  
+  
+  
+  
         </div>
+      </section>
+  </main>
+  <aside class="aside">
+    <div class="article__header">
+      <div class="user__header">
       </div>
-    </main>
-    <article class="article">
-      <div class="article__header">
-        <div class="user__header">
-        </div>
-        <div class="option__header">
-        </div>
-      </div>
-    </article>
-  </body>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+      <div class="option__header"></div>
+    </div>
+  </aside>
+</body>
 </html>

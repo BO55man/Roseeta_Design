@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/App.css" />
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <title>Roseeta</title>
+</head>
+<body>
+  <nav class="nav">
+    <header class="nav__header">
+      <div class="nav__link"></div>
+      <div class="logo__header">
+        <a href="index.html" class="logo__link--nomobile">
+          <img class="logo__img" src="img/RoseetaLogo.svg"/>
+          <div class="logo__name">Roseeta</div>
+        </a>
+      </div>
+    </header>
+    <div class="nav__bar">
+      <div class="nav__box">
+        <a href="index.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="ci:home-alt-fill"
+            style="color: black"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">홈</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="ant-design:search-outlined"
+            style="color: black"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">검색</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <span class="iconify" data-icon="bx:library" style="color: black;" data-width="30" data-height="30"></span>
+          <span class="nav__text">내 라이브러리</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <img src="img/elon_musk.jpeg" class="nav__user-profile" />
+          <span class="nav__text">{{ Username }}</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+      <header class="main__header--nohome">
+        <div class="main__location-front--profile">
+          <a href="#" class="main__back-btn">
+            <span class="iconify back" data-icon="ep:back" data-height="30px" data-width="30px"></span>
+          </a>
+          <span class="main__location--nohome">저자</span>
+        </div>
+      </header>
+      <section class="section--profile">
+        <div class="author--profile">
+            <img class="author__cover--profile" src="img/elon_musk.jpeg"/>
+            <div class="author__ctg--profile">작가</div>
+            <div class="author__title--profile">Ashlee Vance</div>
+        </div>
+      </section>
+  </main>
+  <aside class="aside">
+    <div class="article__header">
+      <div class="user__header">
+      </div>
+      <div class="option__header"></div>
+    </div>
+  </aside>
+</body>
+</html>

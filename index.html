@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/App.css" />
-    <title>Roseeta</title>
-  </head>
-  <body class="body">
-    <nav class="nav">
-      <div class="nav__header">
-        <div class="nav__link"></div>
-        <div class="logo__header">
-          <a href="index.html" class="logo__link">
-            <img src="img/RoseetaLogo.svg" width="40" height="40" />
-            <div class="logo__name">Roseeta</div>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/App.css" />
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <title>Roseeta</title>
+</head>
+<body>
+  <nav class="nav">
+    <header class="nav__header">
+      <div class="nav__link"></div>
+      <div class="logo__header">
+        <a href="index.html" class="logo__link--nomobile">
+          <img class="logo__img" src="img/RoseetaLogo.svg"/>
+          <div class="logo__name">Roseeta</div>
+        </a>
       </div>
+    </header>
+    <div class="nav__bar">
       <div class="nav__box">
         <a href="index.html" class="nav__item">
           <span
@@ -42,245 +44,615 @@
           <span class="nav__text">검색</span>
         </a>
       </div>
-    </nav>
-    <main class="main">
-      <div class="main__header">
-        <div class="main__header--home">Home</div>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <span class="iconify" data-icon="bx:library" style="color: black;" data-width="30" data-height="30"></span>
+          <span class="nav__text">내 라이브러리</span>
+        </a>
       </div>
-      <div class="section--home">
-        <div class="section__header">
-          <h2 class="section__title">로제타의 추천</h2>
-          <a href="#" class="section__show-all">모두보기</a>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <img src="img/elon_musk.jpeg" class="nav__user-profile" />
+          <span class="nav__text">{{ Username }}</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+      <header class="main__header">
+        <a href="index.html" class="logo__link">
+          <div class="main__logo">
+            <img class="logo__img" src="img/RoseetaLogo.svg" width="20" height="20" />
+            <div class="logo__name">Roseeta</div>
+          </div>
+        </a>
+        <div class="main__location">
+          <a href="#" class="main__back-btn">
+            <span class="iconify back" data-icon="ep:back"></span>
+          </a>
+          <span class="main__location--home">home</span>
         </div>
+      </header>
+      <section class="section--home">
+        <a href="show-all.html" class="show-all__link">
+          <header class="section__header">
+            <span class="section__title">로제타의 추천</span>
+            <span class="section__show-all">모두보기</span>
+          </header>
+        </a>
         <div class="section__content">
-          <a href="PoP--profile.html" class="book--card">
-            <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
-            <span class="book__author--card"
-              >Jearl Walker, David Halliday, Robert Resnick</span
-            >
-            <span class="book__title--card"
-              >Principles of Physics 10th Edition</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법과 라면 정확하ㅇㄹㄷㅈㅇㄹ 먹는 방법ㅇ니다.</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
+          <ul class="section--book">
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover4.jpeg" />
+                  <span class="book__author--card">정서경, 박찬욱</span>
+                  <span class="book__title--card">헤어질 결심 각본</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover8.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">마법천자문 53 결정을 내리다! 결단할 결</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover6.jpeg" />
+                  <span class="book__author--card">이민진, 신승미 옮김</span>
+                  <span class="book__title--card">PACHINKO 파친코</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover7.jpg" />
+                  <span class="book__author--card">이민진, 신승미 옮김</span>
+                  <span class="book__title--card">PACHINKO 파친코</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover8.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover9.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section--home">
-        <div class="section__header">
-          <h2 class="section__title">로제타의 추천</h2>
-          <a href="#" class="section__show-all">모두보기</a>
-        </div>
+      </section>
+      <section class="section--home">
+        <a href="show-all.html" class="show-all__link">
+          <header class="section__header">
+            <span class="section__title">밥이 먹고 싶을 때</span>
+            <span class="section__show-all">모두보기</span>
+          </header>
+        </a>
         <div class="section__content">
-          <a href="PoP--profile.html" class="book--card">
-            <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
-            <span class="book__author--card"
-              >Jearl Walker, David Halliday, Robert Resnick</span
-            >
-            <span class="book__title--card"
-              >Principles of Physics 10th Edition</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
+          <ul class="section--book">
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover9.jpg" />
+                  <span class="book__author--card">김철수, 안철수, 박철수, 고철수, 강철수, 구철수</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover4.jpeg" />
+                  <span class="book__author--card">김철수, 김철민, 김옥수, 김철곤</span>
+                  <span class="book__title--card">앙장재바아패장얃럴야자파재ㅏㅇ 쟈ㅏㅇㄹㄹㄹ댜ㅏㅇ랟 장랻 뱡ㅌ 쟈ㅑㅇ러대장</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover5.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover6.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section--home">
-        <div class="section__header">
-          <h2 class="section__title">로제타의 추천</h2>
-          <a href="#" class="section__show-all">모두보기</a>
-        </div>
+      </section>
+      <section class="section--home">
+        <a href="show-all.html" class="show-all__link">
+          <header class="section__header">
+            <span class="section__title">로제타의 추천</span>
+            <span class="section__show-all">모두보기</span>
+          </header>
+        </a>
         <div class="section__content">
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
+          <ul class="section--book">
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover4.jpeg" />
+                  <span class="book__author--card">김철수, 김철민, 김옥수, 김철곤</span>
+                  <span class="book__title--card">앙장재바아패장얃럴야자파재ㅏㅇ 쟈ㅏㅇㄹㄹㄹ댜ㅏㅇ랟 장랻 뱡ㅌ 쟈ㅑㅇ러대장</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover5.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover6.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover9.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section--home">
-        <div class="section__header">
-          <h2 class="section__title">로제타의 추천</h2>
-          <a href="#" class="section__show-all">모두보기</a>
-        </div>
+      </section>
+      <section class="section--home">
+        <a href="show-all.html" class="show-all__link">
+          <header class="section__header">
+            <span class="section__title">로제타의 추천</span>
+            <span class="section__show-all">모두보기</span>
+          </header>
+        </a>
         <div class="section__content">
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
+          <ul class="section--book">
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover4.jpeg" />
+                  <span class="book__author--card">김철수, 김철민, 김옥수, 김철곤</span>
+                  <span class="book__title--card">헤어질 결심 각본</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover5.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover6.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover9.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section--home">
-        <div class="section__header">
-          <h2 class="section__title">로제타의 추천</h2>
-          <a href="#" class="section__show-all">모두보기</a>
-        </div>
+      </section>
+      <section class="section--home">
+        <a href="show-all.html" class="show-all__link">
+          <header class="section__header">
+            <span class="section__title">로제타의 추천</span>
+            <span class="section__show-all">모두보기</span>
+          </header>
+        </a>
         <div class="section__content">
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
+          <ul class="section--book">
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover4.jpeg" />
+                  <span class="book__author--card">김철수, 김철민, 김옥수, 김철곤</span>
+                  <span class="book__title--card">앙장재바아패장얃럴야자파재ㅏㅇ 쟈ㅏㅇㄹㄹㄹ댜ㅏㅇ랟 장랻 뱡ㅌ 쟈ㅑㅇ러대장</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover5.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover6.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section--home">
-        <div class="section__header">
-          <h2 class="section__title">로제타의 추천</h2>
-          <a href="#" class="section__show-all">모두보기</a>
-        </div>
+      </section>
+      <section class="section--home">
+        <a href="show-all.html" class="show-all__link">
+          <header class="section__header">
+            <span class="section__title">로제타의 추천</span>
+            <span class="section__show-all">모두보기</span>
+          </header>
+        </a>
         <div class="section__content">
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
-          <a href="profile--book3-MVP.html" class="book--card">
-            <img class="book__cover--card" src="img/bookcover.jpg" />
-            <span class="book__author--card"
-              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
-              저자다.</span
-            >
-            <span class="book__title--card"
-              >밥 빠르고 먹는 방법 dk dkdswod</span
-            >
-          </a>
+          <ul class="section--book">
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover4.jpeg" />
+                  <span class="book__author--card">김철수, 김철민, 김옥수, 김철곤</span>
+                  <span class="book__title--card">앙장재바아패장얃럴야자파재ㅏㅇ 쟈ㅏㅇㄹㄹㄹ댜ㅏㅇ랟 장랻 뱡ㅌ 쟈ㅑㅇ러대장</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover9.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover5.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover6.jpeg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+            <li class="book__list--home">
+              <a href="profile-book.html">
+                <article class="book--card">
+                  <img class="book__cover--card" src="img/PoP_bookcover.jpg" />
+                  <span class="book__author--card">Jearl Walker, David Halliday, Robert Resnick</span>
+                  <span class="book__title--card">Principles of Physics 10th Edition and 11th Edition and 12th Edition</span>
+                </article>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-    <article class="article">
-      <div class="article__header">
-        <div class="user__header">
-        </div>
-        <div class="option__header"></div>
+      </section>
+  </main>
+  <aside class="aside">
+    <div class="article__header">
+      <div class="user__header">
       </div>
-    </article>
-  </body>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+      <div class="option__header"></div>
+    </div>
+  </aside>
+</body>
 </html>

@@ -1,36 +1,54 @@
+
 @import "reset.css";
+@import "tags.css";
 
+@import "mobile.css";
+@import "tablet.css";
+@import "tablet2.css";
+@import "desktop.css";
+@import "desktop2.css";
 
-
-/* 페이지 위치 */
-@import "mylibrary.css";
-@import "search.css";
-
-/* 박스 */
-@import "article.css";
-@import "nav.css";
-@import "main.css";
-@import "section.css";
-
-/* 객체 */
+@import "aside.css";
 @import "author.css";
 @import "book.css";
 @import "chapter.css";
 @import "logo.css";
-@import "option.css";
-@import "user.css";
+@import "main.css";
+@import "nav.css";
+@import "search.css";
+@import "section.css";
+
+
+@import "book-profile.css";
+
+
+/* 페이지 위치 */
+
+/* 박스 */
+
+/* 객체 */
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src:url('./fonts/NotoSansKR-Thin.woff') format('woff'),
-        url('./fonts/NotoSansKR-Light.woff') format('woff'),
-        url('./fonts/NotoSansKR-Regular.woff') format('woff'),
-        url('./fonts/NotoSansKR-Medium.woff') format('woff'),
-        url('./fonts/NotoSansKR-Bold.woff') format('woff'),
-        url('./fonts/NotoSansKR-Black.woff') format('woff');
+    src:url('../fonts/NotoSansKR-Thin.woff') format('woff'),
+        url('../fonts/NotoSansKR-Light.woff') format('woff'),
+        url('../fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('../fonts/NotoSansKR-Bold.woff') format('woff'),
+        url('../fonts/NotoSansKR-Black.woff') format('woff');
 }
 
-p {
+@media all and (min-width:768px){
+
+}
+@media all and (min-width:1024px){
+}
+@media all and (min-width:1170px){
+}
+@media all and (min-width:1440px){
+}
+
+/* p {
     text-indent: 30px;
     hyphens: auto;
 }
@@ -88,3 +106,7 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
+
+button {
+    cursor: pointer;
+} */
