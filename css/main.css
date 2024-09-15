@@ -1,0 +1,28 @@
+.main__header {
+    display: flex;
+    align-items: center;
+    width: 780px;
+    min-width: 780px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    background-color: #141414;
+    box-sizing: border-box;
+    height: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+
+.main {
+    height: auto;
+    width: 780px;
+    background-color: #141414;
+}
+
+.main__back-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}

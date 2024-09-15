@@ -79,36 +79,57 @@
     </nav>
     <main class="main">
       <div class="main__header">
-        <form class="search__form">
-            <input
-              type="search"
-              class="search__input"
-              placeholder="책, 작가, 플레이리스트"
-            />
-        </form>
+        <a href="#" class="main__back-btn">
+          <span class="iconify back" data-icon="ep:back"></span>
+        </a>
+        <span>Ashlee Vance</span>
       </div>
-      <div class="section--search">
+      <div class="section--profile">
+        <div class="author--profile">
+            <img class="author__cover--profile" src="img/elon_musk.jpeg"/>
+            <div class="author__ctg--profile">작가</div>
+            <div class="author__title--profile">Ashlee Vance</div>
+            <div class="author__follow--profile">
+              <form action='#'><input class="author--follow__btn" type="submit" value="팔로우하기"></form> <!--action에 php주소 입력-->
+            </div>
+        </div>
+      </div>
+      <div class="section">
         <div class="section__header">
-          <h2 class="section__title">검색 카테고리<h2>
-          <span class="section__show-all"></span>
+          <h2 class="section__title">로제타의 추천</h2>
+          <a href="#" class="section__show-all">모두보기</a>
         </div>
         <div class="section__content">
-          <a href="#" class="search-index__link">
-            <img class="search-index__img" src="img/search-index.jpg"/>
-            <span class="search-index__list">물리</span>
+          <a href="profile--book.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
           </a>
-          <a href="#" class="search-index__link">
-            <img class="search-index__img" src="img/search-index.jpg"/>
-            <span class="search-index__list">생물</span>
+          <a href="profile--book.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
           </a>
-          <a href="#" class="search-index__link">
-            <img class="search-index__img" src="img/search-index.jpg"/>
-            <span class="search-index__list">지구과학</span>
+          <a href="profile--book.html" class="book--card">
+            <img class="book__cover--card" src="img/bookcover.jpg" />
+            <span class="book__author--card"
+              >나도 저자고 이친구도 저자고 저 친구도 저자고 너도 저자고 쟤도
+              저자다.</span
+            >
+            <span class="book__title--card"
+              >밥 빠르고 먹는 방법 dk dkdswod</span
+            >
           </a>
-          <a href="#" class="search-index__link">
-            <img class="search-index__img" src="img/search-index.jpg"/>
-              <span class="search-index__list">화학</span>
-            </a>
         </div>
       </div>
     </main>

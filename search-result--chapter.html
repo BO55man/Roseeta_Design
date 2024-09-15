@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/App.css" />
+    <title>Roseeta</title>
+  </head>
+  <body class="body">
+    <nav class="nav">
+      <div class="nav__header">
+        <div class="nav__link">
+          <a href="search__answer--book.html">
+            <span
+              class="iconify"
+              data-icon="bi:list"
+              style="color: white"
+              data-width="32"
+              data-height="32"
+            ></span>
+          </a>
+        </div>
+        <div class="logo__header">
+          <a href="index.html" class="logo__link">
+            <img src="img/RoseetaLogo.svg" width="40" height="40" />
+            <div class="logo__name">Roseeta</div>
+          </a>
+        </div>
+      </div>
+      <div class="nav__box">
+        <a href="index.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="ci:home-alt-fill"
+            style="color: white"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">홈</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="search.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="ant-design:search-outlined"
+            style="color: white"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">검색</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="mylibrary--book.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="bx:library"
+            style="color: white"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">나의 서재</span>
+        </a>
+      </div>
+      <div class="nav__box">
+        <a href="profile--author.html" class="nav__item">
+          <span
+            class="iconify"
+            data-icon="el:bookmark"
+            style="color: white"
+            data-width="30"
+            data-height="30"
+          ></span>
+          <span class="nav__text">북마크</span>
+        </a>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main__header">
+        <form class="search__form">
+          <input
+            type="search"
+            class="search__input"
+            placeholder="책, 작가, 플레이리스트"
+          />
+        </form>
+      </div>
+      <div class="section--search-result">
+        <div class="search__header">
+          <a href="search-result--book.html" class="search__header--noclick"
+            >책</a
+          >
+          <a href="search-result--chapter.html" class="search__header--click"
+            >챕터</a
+          >
+          <a href="search-result--author.html" class="search__header--noclick"
+            >저자</a
+          >
+        </div>
+      </div>
+      <div class="section--search-result">
+        <div class="section__header">
+          <h2 class="section__title"></h2>
+          <a href="#" class="section__show-all"></a>
+        </div>
+        <div class="#">
+          <div class="chapter-header">
+            <div class="chapter-header__number"></div>
+            <div class="chapter-header__cover"></div>
+            <div class="chapter-header__chapter">제목</div>
+            <div class="chapter-header__view">조회수</div>
+            <div class="chapter-header__readingtime">좋아요</div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Elon's world</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">132,411,902</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Africa</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">986,902</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Canada</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">122,658</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Elon's First Start-up</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">12,456,442</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Paypal mafia boss</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">912,102,234</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Mice in Space</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">13,538,756</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">All Electric</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">934,246</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Pain, Suffering and Survival</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">123,987,123</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Liftoff</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">1,467,867</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html"
+                  >The revenge of the Electric Car</a
+                >
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">917,241,962</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html"
+                  >The unified field theory of Elon Musk</a
+                >
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">88,716,102</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+          <div class="chapter">
+            <a href="#"
+              ><img class="chapter__cover" src="img/bookcover.jpg"
+            /></a>
+            <div class="chapter-intro">
+              <div class="chapter__title">
+                <a href="chapter-viewer.html">Epilogue</a>
+              </div>
+              <div class="chapter__author"><a href="#">Ashlee Vance</a></div>
+            </div>
+            <div class="chapter__view">153,098</div>
+            <div class="chapter__readingtime">
+              <span
+                class="iconify"
+                data-icon="ant-design:heart-filled"
+                style="color: white"
+                data-width="35"
+                data-height="35"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <article class="article">
+      <div class="article__header">
+        <div class="user__header">
+          <a href="#" class="user__link">
+            <img class="user__img" src="img/elon_musk.jpeg" />
+            <span class="user__name">유저이름</span>
+          </a>
+        </div>
+        <div class="option__header">
+          <a href="index.html">
+            <span
+              class="iconify-inline"
+              data-icon="fe:elipsis-h"
+              style="color: white"
+              data-width="35"
+              data-height="35"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </body>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</html>
